@@ -1,4 +1,4 @@
-package chess.entities;
+package chess;
 
 public class ChessPosition {
 }

@@ -1,4 +1,4 @@
-package board.entities;
+package board;
 
 public class Piece {
 }
