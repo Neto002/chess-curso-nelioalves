@@ -12,4 +12,10 @@ public abstract class Piece {
     protected Board getBoard() {
         return board;
     }
+
+    @Override
+    public String toString() {
+        // Returns the first character of the piece as a String
+        return String.valueOf(getClass().getSimpleName().charAt(0));
+    }
 }

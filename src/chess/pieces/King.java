@@ -1,4 +1,11 @@
 package chess.pieces;
 
-public class King {
+import board.Board;
+import chess.ChessPiece;
+import chess.enums.Color;
+
+public class King extends ChessPiece {
+    public King(Board board, Color color) {
+        super(board, color);
+    }
 }
