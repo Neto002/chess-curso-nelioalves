@@ -4,8 +4,8 @@ import board.Board;
 import board.Piece;
 import chess.enums.Color;
 
-public class ChessPiece extends Piece {
-    private Color color;
+public abstract class ChessPiece extends Piece {
+    private final Color color;
 
     public ChessPiece(Board board, Color color) {
         super(board);
