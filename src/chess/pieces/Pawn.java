@@ -33,13 +33,13 @@ public class Pawn extends ChessPiece {
 
             // Left Diagonal
             p.setValues(position.getRow() - 1, position.getColumn() - 1);
-            if (getBoard().positionExists(p) && isThereOponentPiece(p)) {
+            if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
                 mat[p.getRow()][p.getColumn()] = true;
             }
 
             // Right Diagonal
             p.setValues(position.getRow() - 1, position.getColumn() + 1);
-            if (getBoard().positionExists(p) && isThereOponentPiece(p)) {
+            if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
                 mat[p.getRow()][p.getColumn()] = true;
             }
         } else { // Black Pawn possible moves
@@ -58,13 +58,13 @@ public class Pawn extends ChessPiece {
 
             // Left Diagonal
             p.setValues(position.getRow() + 1, position.getColumn() + 1);
-            if (getBoard().positionExists(p) && isThereOponentPiece(p)) {
+            if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
                 mat[p.getRow()][p.getColumn()] = true;
             }
 
             // Right Diagonal
             p.setValues(position.getRow() + 1, position.getColumn() + 1);
-            if (getBoard().positionExists(p) && isThereOponentPiece(p)) {
+            if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
                 mat[p.getRow()][p.getColumn()] = true;
             }
         }
